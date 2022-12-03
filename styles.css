@@ -1,0 +1,153 @@
+body{
+    margin: 0px;
+}
+
+.text {
+    font-family:"Courier", monospace;
+    font-weight: 900;
+    margin: 0px 10vw;
+    width: 100vw;
+}
+
+.side{
+    height: 92vh;
+    overflow: hidden;
+    padding-top: 8vh;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.slide{   
+    position: relative;
+    overflow: hidden;
+    font-family:"Courier", monospace;
+    font-weight: 900;
+    color: white;
+    opacity: 0;
+    font-size: 4vmin;
+    top: 10px;
+
+}
+
+.slide.active {
+    top: 0vh;
+    opacity: .85;
+    transition: ease-in .5s;
+}
+
+
+#slide{       
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    top: 80vh;
+    left: 60vw;
+}
+
+#title{
+    color: white;
+    font-size: 14vmin;
+}
+
+#coming{
+    color: rgb(230, 78, 32);
+    font-size: 10vmin;
+    padding-bottom: 60px;
+}
+
+#date, .time{
+    font-size: 7vmin;
+    width: 80px;
+}
+
+#date{
+    color: rgb(230, 78, 32);
+}
+
+.time{
+    visibility: hidden;
+    color: rgb(255, 196, 0);
+}
+
+.rtext{
+    opacity: 0;
+}
+
+#left {
+    background-color:rgb(230, 78, 32);
+    z-index: 2;    
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-name: bounce;
+    -webkit-animation-name: bounce;
+    width: 85vw;
+}
+
+#right {
+    background-color: rgb(255, 196, 0);
+}
+
+.letters {
+    position: relative;
+    opacity: 0;
+}
+
+.letters.active {
+    opacity: 1;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-name: slideup;
+    -webkit-animation-name: slideup;
+}
+
+@-moz-keyframes slideup {
+    0% {
+        top: 93vh;
+    }
+    80% {
+        top: -3vh;
+    }
+    100%{
+        top: 0vh;
+    }
+}
+@-webkit-keyframes slideup {
+    0% {
+        top: 100vh;
+    }
+    80% {
+        top: -3vh;;
+    }
+    100%{
+        top: 0vh;
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        width: 0vw;
+    }
+    50% {
+        width: 95vw;
+    }
+    100%{
+        width:90vw;
+    }
+}
+@-webkit-keyframes bounce {
+    0% {
+       width: 0vw;
+    }
+    33% {
+        width: 95vw;
+    }
+    85%{
+        width: 75vw;
+    }
+    100%{
+        width:85vw;
+    }
+}
+
