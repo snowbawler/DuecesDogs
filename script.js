@@ -54,7 +54,7 @@ document.ontouchmove = e => handleMove(e.touches[0]);
 
 
 
-var countDownDate = new Date("Jan 1, 2023 20:00:00").getTime();
+var countDownDate = new Date("Mar 1, 2023 20:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
