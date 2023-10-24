@@ -1,3 +1,3 @@
 # DuecesDogs
-# 3 Day Project for Startup HotDog Stand
-# open live server in index file
+3 Day test project for Startup HotDog Stand
+# run index file
